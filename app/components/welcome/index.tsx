@@ -321,7 +321,14 @@ const Welcome: FC<IWelcomeProps> = ({
         {!hasSetInputs && (
           <div className='mt-4 flex justify-between items-center h-8 text-xs text-gray-400'>
 
-            
+            {siteInfo.privacy_policy
+              ? <div>{t('app.chat.privacyPolicyLeft')}
+                {t('app.chat.privacyPolicyRight')}
+              </div>
+              : <div>
+              </div>}
+          </div>
+        )}
       </div>
     </div >
   )

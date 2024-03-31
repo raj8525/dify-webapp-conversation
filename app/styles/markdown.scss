@@ -56,6 +56,10 @@
   word-wrap: break-word;
 }
 
+.dark {
+  color: #cccccc;
+}
+
 .light {
   @include light;
 }

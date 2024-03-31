@@ -88,7 +88,10 @@ const Uploader: FC<UploaderProps> = ({
           absolute block inset-0 opacity-0 text-[0] w-full
           ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}
         `}
-        onClick={e => (e.target as HTMLInputElement).value = ''}
+        onClick={e => {
+          (e.target as HTMLInputElement).value = ''
+          console.log('asdf')
+        }}
         type='file'
         accept='.png, .jpg, .jpeg, .webp, .gif'
         onChange={handleChange}

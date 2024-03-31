@@ -29,7 +29,7 @@
   content: '';
   position: absolute;
   top: 0;
-  width: 8px;
+  /* width: 8px; */
   height: 12px;
 }
 
@@ -48,6 +48,7 @@
 
 .question::before {
   right: 0;
+  background-color: black;
   background: url(./icons/question.svg) no-repeat;
 }
 
@@ -79,7 +80,7 @@
 
 .sendBtn:hover {
   background-image: url(./icons/send-active.svg);
-  background-color: #EBF5FF;
+  /* background-color: #EBF5FF; */
 }
 
 .textArea:focus+div .count {

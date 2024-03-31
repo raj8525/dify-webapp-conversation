@@ -7,9 +7,9 @@ import RemarkGfm from 'remark-gfm'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { atelierHeathLight } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
-export function Markdown(props: { content: string }) {
+export function Markdown(props: { content: string, theme: string }) {
   return (
-    <div className="markdown-body">
+    <div className={props.theme}>
       <ReactMarkdown
         remarkPlugins={[RemarkMath, RemarkGfm, RemarkBreaks]}
         rehypePlugins={[
